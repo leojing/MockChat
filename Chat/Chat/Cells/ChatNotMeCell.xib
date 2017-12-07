@@ -32,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="40" height="170.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_contacts_active" translatesAutoresizingMaskIntoConstraints="NO" id="Jps-bC-3hz">
-                                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                        <rect key="frame" x="10" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="5SI-CG-esi"/>
                                             <constraint firstAttribute="width" constant="30" id="oGC-VH-AES"/>
@@ -48,7 +48,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Jps-bC-3hz" firstAttribute="leading" secondItem="NcJ-PO-eo6" secondAttribute="leading" constant="10" id="HVD-AV-WrZ"/>
-                                    <constraint firstItem="Jps-bC-3hz" firstAttribute="top" secondItem="NcJ-PO-eo6" secondAttribute="top" constant="10" id="ZEZ-rw-wV2"/>
+                                    <constraint firstItem="Jps-bC-3hz" firstAttribute="top" secondItem="NcJ-PO-eo6" secondAttribute="top" id="ZEZ-rw-wV2"/>
                                     <constraint firstAttribute="trailing" secondItem="Jps-bC-3hz" secondAttribute="trailing" id="Zx8-jU-zW4"/>
                                 </constraints>
                             </view>
@@ -85,14 +85,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkl-D2-yYd">
                                         <rect key="frame" x="0.0" y="30" width="438" height="90.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_message_box_light" translatesAutoresizingMaskIntoConstraints="NO" id="1Zi-N1-VzU">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_message_box_large_light" translatesAutoresizingMaskIntoConstraints="NO" id="1Zi-N1-VzU">
+                                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="Y6l-nq-roZ"/>
-                                                    <constraint firstAttribute="height" constant="30" id="pbH-JR-tqM"/>
+                                                    <constraint firstAttribute="width" constant="15" id="Y6l-nq-roZ"/>
+                                                    <constraint firstAttribute="height" constant="15" id="pbH-JR-tqM"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_message_box_light" translatesAutoresizingMaskIntoConstraints="NO" id="xbV-l1-4BS">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_message_box_large_light" translatesAutoresizingMaskIntoConstraints="NO" id="xbV-l1-4BS">
                                                 <rect key="frame" x="0.0" y="0.0" width="216" height="90.5"/>
                                             </imageView>
                                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ItemPostFailed" translatesAutoresizingMaskIntoConstraints="NO" id="Ttf-cL-a5h">
@@ -147,6 +147,7 @@
             <connections>
                 <outlet property="addedContentView" destination="iBN-Rp-d8K" id="AWm-Fp-uEB"/>
                 <outlet property="dateTimeLabel" destination="Svt-hL-tsS" id="V3N-CO-yH0"/>
+                <outlet property="headerContentView" destination="zXy-1l-IMl" id="hVd-dB-gf3"/>
                 <outlet property="messageBackgroundView" destination="xbV-l1-4BS" id="fY1-gF-1C6"/>
                 <outlet property="messageContentView" destination="hkl-D2-yYd" id="Qo4-Zn-EYL"/>
                 <outlet property="messageLabel" destination="qwK-Fs-C2D" id="Iut-XP-ka7"/>
@@ -160,7 +161,7 @@
     </objects>
     <resources>
         <image name="ItemPostFailed" width="33" height="33"/>
-        <image name="bg_message_box_light" width="300" height="30"/>
+        <image name="bg_message_box_large_light" width="900" height="30"/>
         <image name="ic_contacts_active" width="48" height="32"/>
     </resources>
 </document>

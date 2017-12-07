@@ -11,6 +11,7 @@ import UIKit
 
 class BaseChatCell: UITableViewCell {
     
+    @IBOutlet weak var headerContentView: UIView!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var dateTimeLabel: UILabel!
@@ -30,12 +31,7 @@ class BaseChatCell: UITableViewCell {
         super.layoutSubviews()
 
         messageBackgroundView.layer.masksToBounds = true
-        messageBackgroundView.layer.cornerRadius = 10
-        
-        if let width = messageLabel.text?.width(withConstraintedHeight: 20, font: UIFont(name: "Avenir-Light", size: 15)!) {
-            messageLabelWidthConstraint?.constant = width > 200 ? 200:width
-            layoutIfNeeded()
-        }
+        messageBackgroundView.layer.cornerRadius = 16
     }
     
     static func nib() -> UINib {
@@ -47,7 +43,16 @@ class BaseChatCell: UITableViewCell {
     }
 
     func update(_ value: Any) {
-        
+        if let width = messageLabel.text?.width(withConstraintedHeight: 20, font: UIFont(name: "Avenir-Light", size: 15)!) {
+            if width > 220 {
+                messageLabelWidthConstraint?.constant = 220
+            } else if width < 20 {
+                messageLabelWidthConstraint?.constant = 20
+            } else {
+                messageLabelWidthConstraint?.constant = width
+            }
+            layoutIfNeeded()
+        }
     }
 }
 

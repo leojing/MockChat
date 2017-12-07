@@ -61,14 +61,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Erf-2d-QbT">
                                         <rect key="frame" x="0.0" y="30" width="586" height="141.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_message_box_purple" translatesAutoresizingMaskIntoConstraints="NO" id="Wju-2T-1he">
-                                                <rect key="frame" x="556" y="0.0" width="30" height="30"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_message_box_large_purple" translatesAutoresizingMaskIntoConstraints="NO" id="Wju-2T-1he">
+                                                <rect key="frame" x="571" y="0.0" width="15" height="15"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="4FF-Bh-cVD"/>
-                                                    <constraint firstAttribute="width" constant="30" id="WdR-Up-cOr"/>
+                                                    <constraint firstAttribute="height" constant="15" id="4FF-Bh-cVD"/>
+                                                    <constraint firstAttribute="width" constant="15" id="WdR-Up-cOr"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_message_box_purple" translatesAutoresizingMaskIntoConstraints="NO" id="85X-ws-DAy">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_message_box_large_purple" translatesAutoresizingMaskIntoConstraints="NO" id="85X-ws-DAy">
                                                 <rect key="frame" x="370" y="0.0" width="216" height="141.5"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, how are you? Where are you? What do you like? Sydney is quite nice but sometimes I still miss my China." lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjr-Qz-ykM">
@@ -114,7 +114,7 @@
                                 <rect key="frame" x="596" y="0.0" width="40" height="221.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_contacts_active" translatesAutoresizingMaskIntoConstraints="NO" id="lUr-dA-Y59">
-                                        <rect key="frame" x="0.0" y="10" width="30" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="5Xg-nk-y2t"/>
                                             <constraint firstAttribute="height" constant="30" id="SgH-hg-b0T"/>
@@ -131,7 +131,7 @@
                                 <constraints>
                                     <constraint firstItem="lUr-dA-Y59" firstAttribute="leading" secondItem="jnH-kR-KLi" secondAttribute="leading" id="6D0-sh-wT8"/>
                                     <constraint firstAttribute="trailing" secondItem="lUr-dA-Y59" secondAttribute="trailing" constant="10" id="EN6-Lx-tMX"/>
-                                    <constraint firstItem="lUr-dA-Y59" firstAttribute="top" secondItem="jnH-kR-KLi" secondAttribute="top" constant="10" id="Oot-w4-Kjj"/>
+                                    <constraint firstItem="lUr-dA-Y59" firstAttribute="top" secondItem="jnH-kR-KLi" secondAttribute="top" id="Oot-w4-Kjj"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -147,6 +147,7 @@
             <connections>
                 <outlet property="addedContentView" destination="FDA-hD-5pZ" id="8dy-Hl-IaD"/>
                 <outlet property="dateTimeLabel" destination="0Cf-RZ-R2X" id="gip-2N-f7K"/>
+                <outlet property="headerContentView" destination="aM0-L5-Neg" id="iso-3o-XeY"/>
                 <outlet property="messageBackgroundView" destination="85X-ws-DAy" id="ZXi-tC-aOT"/>
                 <outlet property="messageContentView" destination="Erf-2d-QbT" id="ba0-Qh-8bF"/>
                 <outlet property="messageLabel" destination="Tjr-Qz-ykM" id="mxj-vo-fD1"/>
@@ -160,7 +161,7 @@
     </objects>
     <resources>
         <image name="ItemPostFailed" width="33" height="33"/>
-        <image name="bg_message_box_purple" width="300" height="30"/>
+        <image name="bg_message_box_large_purple" width="900" height="30"/>
         <image name="ic_contacts_active" width="48" height="32"/>
     </resources>
 </document>

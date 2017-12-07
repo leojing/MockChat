@@ -25,6 +25,6 @@ class ChatMeCell: BaseChatCell {
     }
 
     override func update(_ value: Any) {
-        
+        super.update(value)
     }
 }
