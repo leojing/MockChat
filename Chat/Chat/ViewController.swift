@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    fileprivate var sentMessages = [["how are you?", true], ["Good, how are you?", true], ["fine, how is your holiday?", true], ["Very nice, I visited lots countries.", true], ["Which countries?", true], ["Some Asia countries, I like China the most. It's so amazing.", true], ["Wow, that's cool, tell me more about china.", true], ["China, officially the People's Republic of China (PRC), is a unitary sovereign state in East Asia and the world's most populous country, with a population of around 1.404 billion.[13] Covering approximately 9.6 million square kilometres (3.7 million square miles), it is the world's second-largest state by land area[19] and third- or fourth-largest by total area.[j] Governed by the Communist Party of China, it exercises jurisdiction over 22 provinces, five autonomous regions, four direct-controlled municipalities (Beijing, Tianjin, Shanghai, and Chongqing) and the Special Administrative Regions Hong Kong and Macau, also claiming sovereignty over Taiwan.", true]]
-//    fileprivate var sentMessages = [Any]()
+    fileprivate var messages = [["how are you?", true], ["Good, how are you?", true], ["fine, how is your holiday?", true], ["Very nice, I visited lots countries.", true], ["Which countries?", true], ["Some Asia countries, I like China the most. It's so amazing.", true], ["Wow, that's cool, tell me more about china.", true], ["China, officially the People's Republic of China (PRC), is a unitary sovereign state in East Asia and the world's most populous country, with a population of around 1.404 billion.[13] Covering approximately 9.6 million square kilometres (3.7 million square miles), it is the world's second-largest state by land area[19] and third- or fourth-largest by total area.[j] Governed by the Communist Party of China, it exercises jurisdiction over 22 provinces, five autonomous regions, four direct-controlled municipalities (Beijing, Tianjin, Shanghai, and Chongqing) and the Special Administrative Regions Hong Kong and Macau, also claiming sovereignty over Taiwan.", true]]
+    fileprivate var sentMessages = [[Any]]()
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
@@ -28,25 +28,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        var index = 0
-//        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-//            self.tableView.beginUpdates()
-//            self.sentMessages.append(self.messages[index])
-//            self.tableView.insertRows(at: [IndexPath(row: index, section: 0)], with: .fade)
-//            self.tableView.endUpdates()
-//            self.tableView.scrollToRow(at: IndexPath(row: index, section: 0), at: .bottom, animated: true)
-//            index = index + 1
-//            if (index >= self.messages.count) {
-//                timer.invalidate()
-//
-//                Timer.scheduledTimer(withTimeInterval: 10, repeats: false) {_ in
-//                    self.tableView.beginUpdates()
-//                    self.sentMessages[2] = ["fine, how is your holiday?", false]
-//                    self.tableView.reloadRows(at: [IndexPath(row: 2, section: 0)], with: .none)
-//                    self.tableView.endUpdates()
-//                }
-//            }
-//        }
+        var index = 0
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            self.tableView.beginUpdates()
+            self.sentMessages.append(self.messages[index])
+            self.tableView.insertRows(at: [IndexPath(row: index, section: 0)], with: .fade)
+            self.tableView.endUpdates()
+            self.tableView.scrollToRow(at: IndexPath(row: index, section: 0), at: .bottom, animated: true)
+            index = index + 1
+            if (index >= self.messages.count) {
+                timer.invalidate()
+
+                Timer.scheduledTimer(withTimeInterval: 10, repeats: false) {_ in
+                    self.tableView.beginUpdates()
+                    self.sentMessages[2] = ["fine, how is your holiday?", false]
+                    self.tableView.reloadRows(at: [IndexPath(row: 2, section: 0)], with: .none)
+                    self.tableView.endUpdates()
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
