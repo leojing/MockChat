@@ -22,6 +22,7 @@ class BaseChatCell: UITableViewCell {
     @IBOutlet weak var addedContentView: UIView!
 
     @IBOutlet weak var messageLabelWidthConstraint: NSLayoutConstraint?
+    @IBOutlet weak var addedContentViewHeightConstraint: NSLayoutConstraint?
 
     override func awakeFromNib() {
         super.awakeFromNib()

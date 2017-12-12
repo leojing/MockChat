@@ -18,30 +18,30 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="232" id="4Vv-Uc-qD3" customClass="ChatMeCell" customModule="Chat" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="636" height="232"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="393" id="4Vv-Uc-qD3" customClass="ChatMeCell" customModule="Chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="714" height="393"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Vv-Uc-qD3" id="e01-yH-ScY">
-                <rect key="frame" x="0.0" y="0.0" width="636" height="231.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="714" height="392.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fUo-lm-Iku">
-                        <rect key="frame" x="0.0" y="5" width="636" height="221.5"/>
+                        <rect key="frame" x="0.0" y="5" width="714" height="383"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9hz-Pu-LxE">
-                                <rect key="frame" x="0.0" y="0.0" width="586" height="221.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9hz-Pu-LxE">
+                                <rect key="frame" x="0.0" y="0.0" width="664" height="383"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aM0-L5-Neg">
-                                        <rect key="frame" x="0.0" y="0.0" width="586" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="664" height="20"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Today 13:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cf-RZ-R2X">
-                                                <rect key="frame" x="520.5" y="0.0" width="65.5" height="30"/>
+                                                <rect key="frame" x="598.5" y="0.0" width="65.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcL-Mz-hr4">
-                                                <rect key="frame" x="441" y="0.0" width="64.5" height="30"/>
+                                                <rect key="frame" x="519" y="0.0" width="64.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -50,47 +50,46 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="0Cf-RZ-R2X" firstAttribute="top" secondItem="aM0-L5-Neg" secondAttribute="top" id="5Si-rN-atN"/>
+                                            <constraint firstAttribute="height" constant="20" id="6Xe-fU-Saz"/>
                                             <constraint firstAttribute="bottom" secondItem="0Cf-RZ-R2X" secondAttribute="bottom" id="Syx-8w-GNO"/>
                                             <constraint firstAttribute="bottom" secondItem="PcL-Mz-hr4" secondAttribute="bottom" id="epl-YF-kVK"/>
-                                            <constraint firstAttribute="height" constant="30" id="gv7-Ng-Qc9"/>
                                             <constraint firstItem="PcL-Mz-hr4" firstAttribute="top" secondItem="aM0-L5-Neg" secondAttribute="top" id="kT3-7f-QVz"/>
                                             <constraint firstAttribute="trailing" secondItem="0Cf-RZ-R2X" secondAttribute="trailing" id="qDk-Dv-HeH"/>
                                             <constraint firstItem="0Cf-RZ-R2X" firstAttribute="leading" secondItem="PcL-Mz-hr4" secondAttribute="trailing" constant="15" id="xyt-lq-3T9"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Erf-2d-QbT">
-                                        <rect key="frame" x="0.0" y="30" width="586" height="141.5"/>
+                                        <rect key="frame" x="0.0" y="25" width="664" height="133"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_message_box_large_purple" translatesAutoresizingMaskIntoConstraints="NO" id="Wju-2T-1he">
-                                                <rect key="frame" x="571" y="0.0" width="15" height="15"/>
+                                                <rect key="frame" x="649" y="0.0" width="15" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="4FF-Bh-cVD"/>
                                                     <constraint firstAttribute="width" constant="15" id="WdR-Up-cOr"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_message_box_large_purple" translatesAutoresizingMaskIntoConstraints="NO" id="85X-ws-DAy">
-                                                <rect key="frame" x="370" y="0.0" width="216" height="141.5"/>
+                                                <rect key="frame" x="444" y="0.0" width="220" height="133"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, how are you? Where are you? What do you like? Sydney is quite nice but sometimes I still miss my China." lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjr-Qz-ykM">
-                                                <rect key="frame" x="378" y="8" width="200" height="125.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="q9I-Oc-nMd"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ItemPostFailed" translatesAutoresizingMaskIntoConstraints="NO" id="knL-Ek-pFc">
-                                                <rect key="frame" x="340" y="61" width="20" height="20"/>
+                                                <rect key="frame" x="414" y="57" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="U1k-zu-Zmu"/>
                                                     <constraint firstAttribute="height" constant="20" id="ohH-HO-Zuh"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, how are you? Where are you? What do you like? Sydney is quite nice but sometimes I still miss my China." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjr-Qz-ykM">
+                                                <rect key="frame" x="452" y="8" width="204" height="117"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="204" id="q9I-Oc-nMd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="Tjr-Qz-ykM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Erf-2d-QbT" secondAttribute="leading" constant="100" id="5VL-yq-02B"/>
                                             <constraint firstAttribute="trailing" secondItem="Tjr-Qz-ykM" secondAttribute="trailing" constant="8" id="7f9-2i-2aO"/>
                                             <constraint firstItem="85X-ws-DAy" firstAttribute="leading" secondItem="knL-Ek-pFc" secondAttribute="trailing" constant="10" id="ALZ-Fg-TCD"/>
                                             <constraint firstItem="knL-Ek-pFc" firstAttribute="centerY" secondItem="Erf-2d-QbT" secondAttribute="centerY" id="J4K-SU-qNo"/>
@@ -105,19 +104,23 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDA-hD-5pZ">
-                                        <rect key="frame" x="0.0" y="171.5" width="586" height="50"/>
+                                        <rect key="frame" x="0.0" y="163" width="664" height="220"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="y80-QV-38h"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnH-kR-KLi">
-                                <rect key="frame" x="596" y="0.0" width="40" height="221.5"/>
+                                <rect key="frame" x="674" y="0.0" width="40" height="383"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_contacts_active" translatesAutoresizingMaskIntoConstraints="NO" id="lUr-dA-Y59">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yze-5i-rfu" customClass="ProfileImageView" customModule="Chat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="10" width="30" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="5Xg-nk-y2t"/>
-                                            <constraint firstAttribute="height" constant="30" id="SgH-hg-b0T"/>
+                                            <constraint firstAttribute="width" constant="30" id="Lav-ox-uer"/>
+                                            <constraint firstAttribute="height" constant="30" id="XOe-4c-RgH"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -125,13 +128,13 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                    </imageView>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="lUr-dA-Y59" firstAttribute="leading" secondItem="jnH-kR-KLi" secondAttribute="leading" id="6D0-sh-wT8"/>
-                                    <constraint firstAttribute="trailing" secondItem="lUr-dA-Y59" secondAttribute="trailing" constant="10" id="EN6-Lx-tMX"/>
-                                    <constraint firstItem="lUr-dA-Y59" firstAttribute="top" secondItem="jnH-kR-KLi" secondAttribute="top" id="Oot-w4-Kjj"/>
+                                    <constraint firstAttribute="trailing" secondItem="yze-5i-rfu" secondAttribute="trailing" constant="10" id="6eO-Cd-WBI"/>
+                                    <constraint firstItem="yze-5i-rfu" firstAttribute="leading" secondItem="jnH-kR-KLi" secondAttribute="leading" id="D0W-QU-Vjq"/>
+                                    <constraint firstItem="yze-5i-rfu" firstAttribute="top" secondItem="jnH-kR-KLi" secondAttribute="top" constant="10" id="hYF-ip-juE"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -146,22 +149,22 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="addedContentView" destination="FDA-hD-5pZ" id="8dy-Hl-IaD"/>
+                <outlet property="addedContentViewHeightConstraint" destination="y80-QV-38h" id="1vO-Do-Cna"/>
                 <outlet property="dateTimeLabel" destination="0Cf-RZ-R2X" id="gip-2N-f7K"/>
-                <outlet property="headerContentView" destination="aM0-L5-Neg" id="iso-3o-XeY"/>
+                <outlet property="headerContentView" destination="aM0-L5-Neg" id="pHv-mr-taQ"/>
                 <outlet property="messageBackgroundView" destination="85X-ws-DAy" id="ZXi-tC-aOT"/>
                 <outlet property="messageContentView" destination="Erf-2d-QbT" id="ba0-Qh-8bF"/>
                 <outlet property="messageLabel" destination="Tjr-Qz-ykM" id="mxj-vo-fD1"/>
                 <outlet property="messageLabelWidthConstraint" destination="q9I-Oc-nMd" id="6VX-Zd-ncH"/>
                 <outlet property="messageSentFailedIcon" destination="knL-Ek-pFc" id="p9d-Al-39p"/>
-                <outlet property="profileImageView" destination="lUr-dA-Y59" id="mGh-Q0-SpL"/>
+                <outlet property="profileImageView" destination="yze-5i-rfu" id="4S1-qH-jGv"/>
                 <outlet property="userNameLabel" destination="PcL-Mz-hr4" id="HOA-da-xVO"/>
             </connections>
-            <point key="canvasLocation" x="121" y="-367"/>
+            <point key="canvasLocation" x="160" y="-286.5"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="ItemPostFailed" width="33" height="33"/>
         <image name="bg_message_box_large_purple" width="900" height="30"/>
-        <image name="ic_contacts_active" width="48" height="32"/>
     </resources>
 </document>
