@@ -20,10 +20,12 @@ class BaseChatCell: UITableViewCell {
     @IBOutlet weak var messageBackgroundView: UIImageView!
     @IBOutlet weak var messageSentFailedIcon: UIImageView!
     @IBOutlet weak var addedContentView: UIView!
-
+    
     @IBOutlet weak var messageLabelWidthConstraint: NSLayoutConstraint?
     @IBOutlet weak var addedContentViewHeightConstraint: NSLayoutConstraint?
 
+    var profileImageTappedHandler: (()->Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -33,6 +35,14 @@ class BaseChatCell: UITableViewCell {
 
         messageBackgroundView.layer.masksToBounds = true
         messageBackgroundView.layer.cornerRadius = 16
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        headerContentView.isHidden = false
+        messageContentView.isHidden = false
+        addedContentView.isHidden = true
     }
     
     static func nib() -> UINib {
@@ -66,3 +76,4 @@ extension String {
         return ceil(boundingBox.width)
     }
 }
+

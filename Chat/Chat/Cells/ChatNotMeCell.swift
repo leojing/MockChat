@@ -22,7 +22,6 @@ class ChatNotMeCell: BaseChatCell {
     
     override func update(_ value: Any) {
         super.update(value)
-        
         addContentView(nil)
     }
     
@@ -43,12 +42,11 @@ class ChatNotMeCell: BaseChatCell {
         contentInternalView.translatesAutoresizingMaskIntoConstraints = false
         addedContentView.addSubview(contentInternalView)
         
-        // set constraints for contentView
-        //        contentInternalView.pinTop(toTopOf: addedContentView, constant: 0)
-        //        contentInternalView.pinTrailing(toTrailingOf: addedContentView, constant: 0)
-        //        let _ = contentInternalView.setWidth(to: CGFloat(contentWidth))
-        //        let _ = contentInternalView.setHeight(to: CGFloat(contentHeight))
-        
+//        contentInternalView.pinTop(toTopOf: addedContentView, constant: 0)
+//        contentInternalView.pinLeading(toLeadingOf: addedContentView, constant: 0)
+//        let _ = contentInternalView.setWidth(to: CGFloat(contentWidth))
+//        let _ = contentInternalView.setHeight(to: CGFloat(contentHeight))
+//
         addedContentViewHeightConstraint?.constant = CGFloat(contentHeight)
         layoutIfNeeded()
     }
